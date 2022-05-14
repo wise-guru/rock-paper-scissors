@@ -2,6 +2,7 @@ let computerScore = 0;
 let playerScore = 0;
 let roundResult;
 
+//For the computer to randomly return rock, paper, or scissors//
 function computerPlay() {
     let random = Math.random();
     if (random <= 0.3333) {
@@ -13,7 +14,7 @@ function computerPlay() {
     }
 }
 
-
+//Single round of Rock Paper Scissors//
 function playRound (playerSelection, computerSelection) {
     //The round being a tie//
     if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
@@ -48,7 +49,8 @@ function playRound (playerSelection, computerSelection) {
         return roundResult = ("You lose! Scissors beat Paper.");
     }
 }
-//console.log(playRound(playerSelection, computerSelection));
+
+//Loop the game 5 times//
 
 function game() {
     
