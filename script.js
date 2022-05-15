@@ -50,7 +50,7 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-//Loop the game 5 times//
+/*Loop the game 5 times
 
 function game() {
     
@@ -75,3 +75,5 @@ function game() {
 }  
 
 game();
+
+*/
