@@ -23,13 +23,17 @@ function playerClick() {
 
 playerClick();
 
+const roundResultDiv = document.querySelector('#roundResultDiv')
+
+const roundResultText = document.createElement('h2');
+roundResultText.classList.add('roundResultText');
+roundResultText.textContent = "Pick rock, paper, or scissors.";   
+roundResultDiv.appendChild(roundResultText);
+
+
 const scoreBox = document.querySelector('#scoreBox');
     
-    const roundResultText = document.createElement('h2');
-    roundResultText.classList.add('roundResultText');
-    roundResultText.textContent = "Pick rock, paper, or scissors.";   
-    scoreBox.appendChild(roundResultText);
-
+   
     const score = document.createElement('h1')
     score.classList.add('score');
     score.textContent = ('Score');
@@ -94,7 +98,7 @@ let computerSelection = computerPlay();
         compScoreText.textContent = `Computer score: ${computerScore}`;
 
         if (computerScore === 5) {
-            result = ("You lose! The robot overlords have won. Reload the page to play again.");
+            roundResultText.textContent = ("You lose! The robot overlords have won. Reload the page to play again.");
             disableButtons();
             refresh();
         }
