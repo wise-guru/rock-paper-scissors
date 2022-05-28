@@ -83,7 +83,7 @@ let computerSelection = computerPlay();
             userScoreText.textContent = `Player score: ${playerScore}`;
             
             if (playerScore === 5) {
-                roundResultText.textContent = ("You won! Way to show our robot overlords. Reload the page to play again.");
+                roundResultText.textContent = ("You won! Way to show our robot overlords. Press the button to play again.");
                 disableButtons();
                 refresh();
             }
@@ -98,7 +98,7 @@ let computerSelection = computerPlay();
         compScoreText.textContent = `Computer score: ${computerScore}`;
 
         if (computerScore === 5) {
-            roundResultText.textContent = ("You lose! The robot overlords have won. Reload the page to play again.");
+            roundResultText.textContent = ("You lose! The robot overlords have won. Press the button to play again.");
             disableButtons();
             refresh();
         }
