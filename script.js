@@ -28,11 +28,11 @@ const roundResultDiv = document.querySelector('#roundResultDiv')
 
 const roundResultText = document.createElement('h2');
 roundResultText.classList.add('roundResultText');
-roundResultText.textContent = "Pick rock, paper, or scissors.";   
+roundResultText.textContent = "Pick rock, paper, or scissors. The first one to get to 5 points wins!";   
 roundResultDiv.appendChild(roundResultText);
 
 
-//Creating elements for score display on page"
+//Creating elements for score display on page//
 const scoreBox = document.querySelector('#scoreBox');
     
    
@@ -109,13 +109,15 @@ let computerSelection = computerPlay();
 
 playRound(playerSelection);
 
+
+//to disable buttons after someone reaches a score of 5//
 function disableButtons() {
     document.querySelector('#rock').disabled = true;
     document.querySelector('#paper').disabled = true;
     document.querySelector('#scissors').disabled = true;
 
 }
-
+//button to reset the game//
 function refresh() {
     const refreshDiv = document.querySelector('#refresh');
 
