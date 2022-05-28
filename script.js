@@ -94,7 +94,7 @@ let computerSelection = computerPlay();
     (computerSelection === "paper" && playerSelection === "rock") ||
     (computerSelection === "scissors" && playerSelection === "paper")) {
         computerScore += 1;
-        roundResultText.textContent = ("You lose! " + playerSelection + " beats " + computerSelection + ".");
+        roundResultText.textContent = ("You lose! " + computerSelection + " beats " + playerSelection + ".");
         compScoreText.textContent = `Computer score: ${computerScore}`;
 
         if (computerScore === 5) {
