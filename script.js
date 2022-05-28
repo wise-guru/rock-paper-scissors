@@ -4,6 +4,7 @@ let roundResult;
 let playerSelection;
 
 
+//to trigger playRound function with button click//
 function playerClick() {
     const rock = document.querySelector('#rock');
     rock.addEventListener('click', function() {
@@ -31,6 +32,7 @@ roundResultText.textContent = "Pick rock, paper, or scissors.";
 roundResultDiv.appendChild(roundResultText);
 
 
+//Creating elements for score display on page"
 const scoreBox = document.querySelector('#scoreBox');
     
    
